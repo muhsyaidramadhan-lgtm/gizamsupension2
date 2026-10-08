@@ -3,13 +3,13 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
 
-// Ganti 'gizamsupension' sesuai NAMA REPO GitHub kamu
-// URL jadi: https://USERNAME.github.io/gizamsupension/
-const REPO_NAME = 'gizamsupension';
+// Nama repo GitHub kamu = gizamsupension2
+// URL: https://muhsyairamadhan-lgtm.github.io/gizamsupension2/
+const REPO_NAME = 'gizamsupension2';
 
 export default defineConfig({
-  // Wajib untuk GitHub Pages (project site di subdirectory)
-  base: process.env.GITHUB_PAGES === 'true' ? `/${REPO_NAME}/` : '/',
+  // Wajib untuk GitHub Pages project site
+  base: `/${REPO_NAME}/`,
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
